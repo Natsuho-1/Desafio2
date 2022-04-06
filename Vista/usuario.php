@@ -105,7 +105,7 @@
         <hr>
         <img  class="img-responsive" border="2px" style="height: 300px; width: 300px; border-radius:150px; padding:  5px 5px 5px 5px;text-align:center" src="../img/<?=$result -> img?>"></img>
         <p style="text-align:center; padding:  15px 15px 15px 15px;"><?=$result -> descripcion?></p>
-        <a style="text-align:center" href="#editarmodal" data-toggle="modal" class="btn btn-success">Comprar</a>  <a disabled="true" class="btn btn-primary" href="#!">Precio $<?=$result -> precio?></a> <a disabled="true" class="btn btn-primary" href="#!">Existencias <?=$result -> existencias?></a>
+        <a style="text-align:center" href="#editarmodal_<?=$result -> codigo?>" data-toggle="modal" class="btn btn-success">Comprar</a>  <a disabled="true" class="btn btn-primary" href="#!">Precio $<?=$result -> precio?></a> <a disabled="true" class="btn btn-primary" href="#!">Existencias <?=$result -> existencias?></a>
     </div>
     <?php include('ver_modal.php'); ?>
     <?php  

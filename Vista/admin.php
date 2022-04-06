@@ -112,7 +112,8 @@
     ?>
                 <tr>
                 <td style="width: 120px; padding:  10px 0px 5px 20px;" class="table-active"><?=$result -> codigo?>
-                    <a href="#editarmodal<?php echo $result -> codigo; ?>" data-toggle="modal" class="btn btn-success">comprar/buy</a><br>
+                    <a href="#editarmodal_<?=$result -> codigo?>" data-toggle="modal" class="btn btn-success">comprar/buy</a><br>
+                    <a class="btn btn-warning" href="#modificar_<?=$result -> codigo?>" data-toggle="modal"><span class="glyphicon glyphicon-floppy-disk"></span> Modificar</a>
                     <a class="btn btn-danger" href="#delete_<?=$result -> codigo?>" data-toggle="modal"><span class="glyphicon glyphicon-floppy-disk"></span> Eliminar..</a>
                     <td style="width: 250px;text-align:center" class="table-default"><?=$result -> nombre?></td>
                     <td style="text-align:center" class="table-primary"><?=$result -> descripcion?></td>
@@ -122,6 +123,8 @@
                     <td style="text-align:center" class="table-warning"><?=$result -> existencias?></td>
                 </tr>
                 <?php include('nueva_modal.php'); ?>
+                <?php include('ver_modal.php'); ?>
+                <?php include('modificar_modal.php'); ?>
                 <?php include('borrar_modal.php'); ?>
 
                 <?php  
