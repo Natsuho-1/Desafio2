@@ -26,5 +26,5 @@ if($_POST['acc']=='envio'){
     $nar=$_FILES['archivo']['name'];
      move_uploaded_file($_FILES['archivo']['tmp_name'],'../img/'.$nar);
  }
- header('location:../vista/admin.php?exito=1');
+ header('location:../vista/admin.php');
 ?>
