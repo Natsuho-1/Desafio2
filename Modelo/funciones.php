@@ -207,9 +207,9 @@
 					
 					
 					if($id_tipo==2){					
-					 header("location: ../vista/usuario.php");//PARA DIRECCIONAR A LA VISTA DEL USUARIO
+					 header("location: ../Vista/usuario.php");//PARA DIRECCIONAR A LA VISTA DEL USUARIO
 					}else if($id_tipo==1){
-						header("location: ../vista/admin.php");//PARA DIRECCIONAR A LA VISTA DEL ADMIN
+						header("location: ../Vista/admin.php");//PARA DIRECCIONAR A LA VISTA DEL ADMIN
 						
 					}else if($id_tipo==3){
 
