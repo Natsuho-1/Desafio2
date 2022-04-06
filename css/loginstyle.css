@@ -1,0 +1,16 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#loginbox{
+    margin-top:200px;
+}
+#signupbox{
+    margin-top:100px;
+}
+
